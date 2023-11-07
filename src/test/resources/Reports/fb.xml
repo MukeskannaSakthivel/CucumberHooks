@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="175.343352">
+<testcase classname="To validate login functionality" name="To validate login using invalid username and invalid password" time="60.60454">
+<system-out><![CDATA[Given user launch adactin application.......................................passed
+When user enter username  and password......................................passed
+And user click login button.................................................passed
+Then user see the results based on credential types.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate login functionality" name="To validate login using valid username and valid password" time="23.711463">
+<system-out><![CDATA[Given user launch adactin application.......................................passed
+When user enter username  and password......................................passed
+And user click login button.................................................passed
+Then user see the results based on credential types.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate search hotel functionality" name="To validate search by without passing all required fields" time="20.631819">
+<system-out><![CDATA[Given user launch adactin application.......................................passed
+And user enter username  and password.......................................passed
+And user click login button.................................................passed
+When user not select the location and select the Hotels,RoomType,NoofRooms,CheckInDate,CheckOutDate,AdultsPerRoom,ChildPerRoom.passed
+And user click the search button............................................passed
+Then user check the next page loaded........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate search hotel functionality" name="To validate search by  passing all required fields" time="20.615701">
+<system-out><![CDATA[Given user launch adactin application.......................................passed
+And user enter username  and password.......................................passed
+And user click login button.................................................passed
+When user select the Location,Hotels,RoomType,NoofRooms,CheckInDate,CheckOutDate,AdultsPerRoom,ChildPerRoom.passed
+And user click the search button............................................passed
+Then user check the next page loaded........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate select hotel functionality" name="To validate select hotel functionality by selecting a hotel" time="24.274653">
+<system-out><![CDATA[Given user launch adactin application.......................................passed
+And user enter username  and password.......................................passed
+And user click login button.................................................passed
+And user select the Location,Hotels,RoomType,NoofRooms,CheckInDate,CheckOutDate,AdultsPerRoom,ChildPerRoom.passed
+And user click the search button............................................passed
+When user select a hotel....................................................passed
+And user click the continue button..........................................passed
+Then user see the payment page..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate payment functionality" name="To validate payment functionality by passing all details" time="25.505176">
+<system-out><![CDATA[Given user launch adactin application.......................................passed
+And user enter username  and password.......................................passed
+And user click login button.................................................passed
+And user select the Location,Hotels,RoomType,NoofRooms,CheckInDate,CheckOutDate,AdultsPerRoom,ChildPerRoom.passed
+And user click the search button............................................passed
+And user select a hotel.....................................................passed
+And user click the continue button..........................................passed
+When user enter firstname,lastname,address,creditCardnumber.................passed
+And user select creditCardtype,expMonth,expYear.............................passed
+And user enter cvv..........................................................passed
+And user click booknow......................................................passed
+Then user see the order number generated....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
